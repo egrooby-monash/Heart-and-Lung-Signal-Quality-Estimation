@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=utf-8" />
+<TITLE>RTW Report - sampenc_mex.c </TITLE>
+</HEAD>
+<BODY BGCOLOR="#eeeeee" TEXT="#1122aa" ONLOAD="if (top) { if (top.rtwFileOnLoad) top.rtwFileOnLoad(window);}">
+<P>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="6" WIDTH="100%" HEIGHT="100%"><TR><TD WIDTH="100%" VALIGN="top" BGCOLOR="#ffffff">
+<H4>File: <A HREF="file:///C:\Users\sedm3697\Dropbox\DPhil\Matlab\Final_Matlab_Code\Signal Quality\Signal Quality Features\sampen\codegen\mex\sampenc\sampenc_mex.c" TARGET="rtwreport_document_frame">C:\Users\sedm3697\Dropbox\DPhil\Matlab\Final_Matlab_Code\Signal Quality\Signal Quality Features\sampen\codegen\mex\sampenc\sampenc_mex.c</A></H4>
+<PRE id="RTWcode">
+<A NAME="1"><FONT COLOR="#888888"><I>    1   </I></FONT></A><FONT COLOR="#117755"><I>/*</I></FONT>
+<A NAME="2"><FONT COLOR="#888888"><I>    2   </I></FONT></A><FONT COLOR="#117755"><I> * sampenc_mex.c</I></FONT>
+<A NAME="3"><FONT COLOR="#888888"><I>    3   </I></FONT></A><FONT COLOR="#117755"><I> *</I></FONT>
+<A NAME="4"><FONT COLOR="#888888"><I>    4   </I></FONT></A><FONT COLOR="#117755"><I> * Code generation for function 'sampenc'</I></FONT>
+<A NAME="5"><FONT COLOR="#888888"><I>    5   </I></FONT></A><FONT COLOR="#117755"><I> *</I></FONT>
+<A NAME="6"><FONT COLOR="#888888"><I>    6   </I></FONT></A><FONT COLOR="#117755"><I> * C source code generated on: Tue Aug 18 16:14:49 2015</I></FONT>
+<A NAME="7"><FONT COLOR="#888888"><I>    7   </I></FONT></A><FONT COLOR="#117755"><I> *</I></FONT>
+<A NAME="8"><FONT COLOR="#888888"><I>    8   </I></FONT></A><FONT COLOR="#117755"><I> */</I></FONT>
+<A NAME="9"><FONT COLOR="#888888"><I>    9   </I></FONT></A>
+<A NAME="10"><FONT COLOR="#888888"><I>   10   </I></FONT></A><FONT COLOR="#117755"><I>/* Include files */</I></FONT>
+<A NAME="11"><FONT COLOR="#888888"><I>   11   </I></FONT></A><FONT COLOR="#992211">#</FONT><FONT COLOR="#992211"><B>include</B></FONT> <FONT COLOR="#992211">&quot;mex.h&quot;</FONT>
+<A NAME="12"><FONT COLOR="#888888"><I>   12   </I></FONT></A><FONT COLOR="#992211">#</FONT><FONT COLOR="#992211"><B>include</B></FONT> <FONT COLOR="#992211">&quot;sampenc_api.h&quot;</FONT>
+<A NAME="13"><FONT COLOR="#888888"><I>   13   </I></FONT></A><FONT COLOR="#992211">#</FONT><FONT COLOR="#992211"><B>include</B></FONT> <FONT COLOR="#992211">&quot;sampenc_initialize.h&quot;</FONT>
+<A NAME="14"><FONT COLOR="#888888"><I>   14   </I></FONT></A><FONT COLOR="#992211">#</FONT><FONT COLOR="#992211"><B>include</B></FONT> <FONT COLOR="#992211">&quot;sampenc_terminate.h&quot;</FONT>
+<A NAME="15"><FONT COLOR="#888888"><I>   15   </I></FONT></A>
+<A NAME="16"><FONT COLOR="#888888"><I>   16   </I></FONT></A><FONT COLOR="#117755"><I>/* Type Definitions */</I></FONT>
+<A NAME="17"><FONT COLOR="#888888"><I>   17   </I></FONT></A>
+<A NAME="18"><FONT COLOR="#888888"><I>   18   </I></FONT></A><FONT COLOR="#117755"><I>/* Function Declarations */</I></FONT>
+<A NAME="19"><FONT COLOR="#888888"><I>   19   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> <FONT COLOR="#112266"><B>void</B></FONT> <A HREF="sampenc_mex_c.html#fcn_sampenc_mexFunction" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_sampenc_mexFunction');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">sampenc_mexFunction</FONT></A>(<FONT COLOR="#112266"><B>int</B></FONT> nlhs, mxArray *plhs[], <FONT COLOR="#112266"><B>int</B></FONT> nrhs, <FONT COLOR="#112266"><B>const</B></FONT> mxArray *prhs[]);
+<A NAME="20"><FONT COLOR="#888888"><I>   20   </I></FONT></A>
+<A NAME="21"><FONT COLOR="#888888"><I>   21   </I></FONT></A><FONT COLOR="#117755"><I>/* Variable Definitions */</I></FONT>
+<A NAME="22"><FONT COLOR="#888888"><I>   22   </I></FONT></A>emlrtContext <A NAME="var_emlrtContextGlobal">emlrtContextGlobal</A> = <B>{</B> true, false, EMLRT_VERSION_INFO, NULL, <FONT COLOR="#1122ff">&quot;sampenc&quot;</FONT>, NULL, false, NULL, false, 1, false <B>}</B>;
+<A NAME="23"><FONT COLOR="#888888"><I>   23   </I></FONT></A>
+<A NAME="24"><FONT COLOR="#888888"><I>   24   </I></FONT></A><FONT COLOR="#117755"><I>/* Function Definitions */</I></FONT>
+<A NAME="25"><FONT COLOR="#888888"><I>   25   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> <FONT COLOR="#112266"><B>void</B></FONT> <A NAME="fcn_sampenc_mexFunction">sampenc_mexFunction</A>(<FONT COLOR="#112266"><B>int</B></FONT> nlhs, mxArray *plhs[], <FONT COLOR="#112266"><B>int</B></FONT> nrhs, <FONT COLOR="#112266"><B>const</B></FONT> mxArray *prhs[])
+<A NAME="26"><FONT COLOR="#888888"><I>   26   </I></FONT></A><B>{</B>
+<A NAME="27"><FONT COLOR="#888888"><I>   27   </I></FONT></A>  <FONT COLOR="#117755"><I>/* Temporary copy for mex outputs. */</I></FONT>
+<A NAME="28"><FONT COLOR="#888888"><I>   28   </I></FONT></A>  mxArray *outputs[3];
+<A NAME="29"><FONT COLOR="#888888"><I>   29   </I></FONT></A>  <FONT COLOR="#112266"><B>int</B></FONT> n = 0;
+<A NAME="30"><FONT COLOR="#888888"><I>   30   </I></FONT></A>  <FONT COLOR="#112266"><B>int</B></FONT> nOutputs = (nlhs &lt; 1 ? 1 : nlhs);
+<A NAME="31"><FONT COLOR="#888888"><I>   31   </I></FONT></A>  <FONT COLOR="#117755"><I>/* Check for proper number of arguments. */</I></FONT>
+<A NAME="32"><FONT COLOR="#888888"><I>   32   </I></FONT></A>  <FONT COLOR="#112266"><B>if</B></FONT>(nrhs != 3) <B>{</B>
+<A NAME="33"><FONT COLOR="#888888"><I>   33   </I></FONT></A>    mexErrMsgIdAndTxt(<FONT COLOR="#1122ff">&quot;emlcoder:emlmex:WrongNumberOfInputs&quot;</FONT>,<FONT COLOR="#1122ff">&quot;3 inputs required for entry-point 'sampenc'.&quot;</FONT>);
+<A NAME="34"><FONT COLOR="#888888"><I>   34   </I></FONT></A>  <B>}</B> <FONT COLOR="#112266"><B>else</B></FONT> <FONT COLOR="#112266"><B>if</B></FONT>(nlhs &gt; 3) <B>{</B>
+<A NAME="35"><FONT COLOR="#888888"><I>   35   </I></FONT></A>    mexErrMsgIdAndTxt(<FONT COLOR="#1122ff">&quot;emlcoder:emlmex:TooManyOutputArguments&quot;</FONT>,<FONT COLOR="#1122ff">&quot;Too many output arguments for entry-point 'sampenc'.&quot;</FONT>);
+<A NAME="36"><FONT COLOR="#888888"><I>   36   </I></FONT></A>  <B>}</B>
+<A NAME="37"><FONT COLOR="#888888"><I>   37   </I></FONT></A>  <FONT COLOR="#117755"><I>/* Module initialization. */</I></FONT>
+<A NAME="38"><FONT COLOR="#888888"><I>   38   </I></FONT></A>  <A HREF="sampenc_initialize_c.html#fcn_sampenc_initialize" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_sampenc_initialize');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">sampenc_initialize</FONT></A>(&amp;<A HREF="sampenc_mex_c.html#var_emlrtContextGlobal" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emlrtContextGlobal');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emlrtContextGlobal</FONT></A>);
+<A NAME="39"><FONT COLOR="#888888"><I>   39   </I></FONT></A>  <FONT COLOR="#117755"><I>/* Call the function. */</I></FONT>
+<A NAME="40"><FONT COLOR="#888888"><I>   40   </I></FONT></A>  <A HREF="sampenc_api_c.html#fcn_sampenc_api" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_sampenc_api');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">sampenc_api</FONT></A>(prhs,(<FONT COLOR="#112266"><B>const</B></FONT> mxArray**)outputs);
+<A NAME="41"><FONT COLOR="#888888"><I>   41   </I></FONT></A>  <FONT COLOR="#117755"><I>/* Copy over outputs to the caller. */</I></FONT>
+<A NAME="42"><FONT COLOR="#888888"><I>   42   </I></FONT></A>  <FONT COLOR="#112266"><B>for</B></FONT> (n = 0; n &lt; nOutputs; ++n) <B>{</B>
+<A NAME="43"><FONT COLOR="#888888"><I>   43   </I></FONT></A>    plhs[n] = emlrtReturnArrayR2009a(outputs[n]);
+<A NAME="44"><FONT COLOR="#888888"><I>   44   </I></FONT></A>  <B>}</B>
+<A NAME="45"><FONT COLOR="#888888"><I>   45   </I></FONT></A>  <FONT COLOR="#117755"><I>/* Module finalization. */</I></FONT>
+<A NAME="46"><FONT COLOR="#888888"><I>   46   </I></FONT></A>  <A HREF="sampenc_terminate_c.html#fcn_sampenc_terminate" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_sampenc_terminate');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">sampenc_terminate</FONT></A>();
+<A NAME="47"><FONT COLOR="#888888"><I>   47   </I></FONT></A><B>}</B>
+<A NAME="48"><FONT COLOR="#888888"><I>   48   </I></FONT></A><FONT COLOR="#112266"><B>void</B></FONT> <A NAME="fcn_mexFunction">mexFunction</A>(<FONT COLOR="#112266"><B>int</B></FONT> nlhs, mxArray *plhs[], <FONT COLOR="#112266"><B>int</B></FONT> nrhs, <FONT COLOR="#112266"><B>const</B></FONT> mxArray *prhs[])
+<A NAME="49"><FONT COLOR="#888888"><I>   49   </I></FONT></A><B>{</B>
+<A NAME="50"><FONT COLOR="#888888"><I>   50   </I></FONT></A>  <FONT COLOR="#117755"><I>/* Initialize the memory manager. */</I></FONT>
+<A NAME="51"><FONT COLOR="#888888"><I>   51   </I></FONT></A>  mexAtExit(<A HREF="sampenc_terminate_c.html#fcn_sampenc_atexit" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_sampenc_atexit');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">sampenc_atexit</FONT></A>);
+<A NAME="52"><FONT COLOR="#888888"><I>   52   </I></FONT></A>  emlrtClearAllocCount(&amp;<A HREF="sampenc_mex_c.html#var_emlrtContextGlobal" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emlrtContextGlobal');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emlrtContextGlobal</FONT></A>, 0, 0, NULL);
+<A NAME="53"><FONT COLOR="#888888"><I>   53   </I></FONT></A>  <FONT COLOR="#117755"><I>/* Dispatch the entry-point. */</I></FONT>
+<A NAME="54"><FONT COLOR="#888888"><I>   54   </I></FONT></A>  <A HREF="sampenc_mex_c.html#fcn_sampenc_mexFunction" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_sampenc_mexFunction');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">sampenc_mexFunction</FONT></A>(nlhs, plhs, nrhs, prhs);
+<A NAME="55"><FONT COLOR="#888888"><I>   55   </I></FONT></A><B>}</B>
+<A NAME="56"><FONT COLOR="#888888"><I>   56   </I></FONT></A><FONT COLOR="#117755"><I>/* End of code generation (sampenc_mex.c) */</I></FONT>
+<A NAME="57"><FONT COLOR="#888888"><I>   57   </I></FONT></A></PRE>
+</TD></TR></TABLE>
+</P>
+</BODY>
+</HTML>

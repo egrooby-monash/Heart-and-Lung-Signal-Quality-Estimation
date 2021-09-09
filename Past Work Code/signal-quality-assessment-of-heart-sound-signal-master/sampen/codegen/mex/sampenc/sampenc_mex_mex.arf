@@ -1,0 +1,8 @@
+libemlrt.lib
+libut.lib
+libmwblascompat32.lib
+libmwmathutil.lib
+/export:mexFunction
+/export:sampenc
+/export:sampenc_initialize
+/export:sampenc_terminate

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment-project>
+  <configuration target="target.matlab.coder" target-name="MATLAB Coder Target" name="sampenc" location="C:\Users\sedm3697\Dropbox\DPhil\Matlab\Final_Matlab_Code\Signal Quality\Signal Quality Features\sampen" file="C:\Users\sedm3697\Dropbox\DPhil\Matlab\Final_Matlab_Code\Signal Quality\Signal Quality Features\sampen\sampenc.prj" build-checksum="3048789593">
+    <param.mex.general.TargetLang>option.general.TargetLang.C</param.mex.general.TargetLang>
+    <param.mex.general.IntegrityChecks>true</param.mex.general.IntegrityChecks>
+    <param.mex.general.ResponsivenessChecks>true</param.mex.general.ResponsivenessChecks>
+    <param.mex.general.EnableBLAS>true</param.mex.general.EnableBLAS>
+    <param.mex.general.ExtrinsicCalls>true</param.mex.general.ExtrinsicCalls>
+    <param.mex.general.EchoExpressions>true</param.mex.general.EchoExpressions>
+    <param.mex.general.EnableDebugging>true</param.mex.general.EnableDebugging>
+    <param.mex.general.SaturateOnIntegerOverflow>true</param.mex.general.SaturateOnIntegerOverflow>
+    <param.mex.general.FilePartitionMethod>option.general.FilePartitionMethod.MapMFileToCFile</param.mex.general.FilePartitionMethod>
+    <param.mex.general.GlobalDataSyncMethod>option.general.GlobalDataSyncMethod.SyncAlways</param.mex.general.GlobalDataSyncMethod>
+    <param.mex.general.EnableVariableSizing>true</param.mex.general.EnableVariableSizing>
+    <param.mex.general.DynamicMemoryAllocation>option.general.DynamicMemoryAllocation.Enabled</param.mex.general.DynamicMemoryAllocation>
+    <param.mex.paths.working>option.paths.working.project</param.mex.paths.working>
+    <param.mex.paths.working.specified />
+    <param.mex.paths.build>option.paths.build.project</param.mex.paths.build>
+    <param.mex.paths.build.specified />
+    <param.mex.paths.search />
+    <param.mex.report.GenerateReport>true</param.mex.report.GenerateReport>
+    <param.mex.report.LaunchReport>false</param.mex.report.LaunchReport>
+    <param.mex.comments.GenerateComments>true</param.mex.comments.GenerateComments>
+    <param.mex.comments.MATLABSourceComments>true</param.mex.comments.MATLABSourceComments>
+    <param.mex.symbols.ReservedNameArray />
+    <param.mex.customcode.CustomSourceCode />
+    <param.mex.customcode.CustomHeaderCode />
+    <param.mex.customcode.CustomInitializer />
+    <param.mex.customcode.CustomTerminator />
+    <param.mex.customcode.CustomInclude />
+    <param.mex.customcode.CustomSource />
+    <param.mex.customcode.CustomLibrary />
+    <param.mex.PostCodeGenCommand />
+    <param.mex.EnableMemcpy>true</param.mex.EnableMemcpy>
+    <param.mex.MemcpyThreshold>64</param.mex.MemcpyThreshold>
+    <param.mex.InitFltsAndDblsToZero>true</param.mex.InitFltsAndDblsToZero>
+    <param.mex.InlineThreshold>10</param.mex.InlineThreshold>
+    <param.mex.InlineThresholdMax>200</param.mex.InlineThresholdMax>
+    <param.mex.InlineStackLimit>4000</param.mex.InlineStackLimit>
+    <param.mex.StackUsageMax>200000</param.mex.StackUsageMax>
+    <param.mex.ConstantFoldingTimeout>10000</param.mex.ConstantFoldingTimeout>
+    <param.grt.general.TargetLang>option.general.TargetLang.C</param.grt.general.TargetLang>
+    <param.general.target.description>MATLAB Coder Target</param.general.target.description>
+    <param.grt.CCompilerOptimization>option.CCompilerOptimization.Off</param.grt.CCompilerOptimization>
+    <param.grt.CCompilerCustomOptimizations />
+    <param.grt.general.GenerateMakefile>true</param.grt.general.GenerateMakefile>
+    <param.grt.general.MakeCommand>make_rtw</param.grt.general.MakeCommand>
+    <param.grt.general.TemplateMakefile>default_tmf</param.grt.general.TemplateMakefile>
+    <param.grt.general.SaturateOnIntegerOverflow>true</param.grt.general.SaturateOnIntegerOverflow>
+    <param.grt.general.FilePartitionMethod>option.general.FilePartitionMethod.MapMFileToCFile</param.grt.general.FilePartitionMethod>
+    <param.grt.general.EnableVariableSizing>true</param.grt.general.EnableVariableSizing>
+    <param.grt.general.DynamicMemoryAllocation>option.general.DynamicMemoryAllocation.Disabled</param.grt.general.DynamicMemoryAllocation>
+    <param.grt.paths.working>option.paths.working.project</param.grt.paths.working>
+    <param.grt.paths.working.specified />
+    <param.grt.paths.build>option.paths.build.project</param.grt.paths.build>
+    <param.grt.paths.build.specified />
+    <param.grt.paths.search />
+    <param.grt.report.GenerateReport>true</param.grt.report.GenerateReport>
+    <param.grt.report.LaunchReport>false</param.grt.report.LaunchReport>
+    <param.grt.GenerateComments>true</param.grt.GenerateComments>
+    <param.grt.MATLABSourceComments>false</param.grt.MATLABSourceComments>
+    <param.ert.MATLABFcnDesc>false</param.ert.MATLABFcnDesc>
+    <param.ert.CustomSymbolStrGlobalVar>$M$N</param.ert.CustomSymbolStrGlobalVar>
+    <param.ert.CustomSymbolStrType>$M$N</param.ert.CustomSymbolStrType>
+    <param.ert.CustomSymbolStrField>$M$N</param.ert.CustomSymbolStrField>
+    <param.ert.CustomSymbolStrFcn>$M$N</param.ert.CustomSymbolStrFcn>
+    <param.ert.CustomSymbolStrTmpVar>$M$N</param.ert.CustomSymbolStrTmpVar>
+    <param.ert.CustomSymbolStrMacro>$M$N</param.ert.CustomSymbolStrMacro>
+    <param.ert.CustomSymbolStrEMXArray>emxArray_$M$N</param.ert.CustomSymbolStrEMXArray>
+    <param.grt.MaxIdLength>32</param.grt.MaxIdLength>
+    <param.grt.ReservedNameArray />
+    <param.grt.customcode.CustomSourceCode />
+    <param.grt.customcode.CustomHeaderCode />
+    <param.grt.customcode.CustomInitializer />
+    <param.grt.customcode.CustomTerminator />
+    <param.grt.customcode.CustomInclude />
+    <param.grt.customcode.CustomSource />
+    <param.grt.customcode.CustomLibrary />
+    <param.grt.PostCodeGenCommand />
+    <param.grt.Verbose>false</param.grt.Verbose>
+    <param.grt.TargetFunctionLibrary>C89/C90 (ANSI)</param.grt.TargetFunctionLibrary>
+    <param.grt.SupportNonFinite>true</param.grt.SupportNonFinite>
+    <param.ert.ParenthesesLevel>option.ParenthesesLevel.Nominal</param.ert.ParenthesesLevel>
+    <param.ert.ConvertIfToSwitch>false</param.ert.ConvertIfToSwitch>
+    <param.ert.PreserveExternInFcnDecls>true</param.ert.PreserveExternInFcnDecls>
+    <param.grt.EnableMemcpy>true</param.grt.EnableMemcpy>
+    <param.grt.MemcpyThreshold>64</param.grt.MemcpyThreshold>
+    <param.grt.InitFltsAndDblsToZero>true</param.grt.InitFltsAndDblsToZero>
+    <param.grt.InlineThreshold>10</param.grt.InlineThreshold>
+    <param.grt.InlineThresholdMax>200</param.grt.InlineThresholdMax>
+    <param.grt.InlineStackLimit>4000</param.grt.InlineStackLimit>
+    <param.grt.StackUsageMax>200000</param.grt.StackUsageMax>
+    <param.grt.ConstantFoldingTimeout>10000</param.grt.ConstantFoldingTimeout>
+    <param.UseECoderFeatures>false</param.UseECoderFeatures>
+    <param.mex.outputfile>sampenc_mex</param.mex.outputfile>
+    <param.grt.outputfile>sampenc</param.grt.outputfile>
+    <param.artifact>option.target.artifact.mex</param.artifact>
+    <param.mex.GenCodeOnly>false</param.mex.GenCodeOnly>
+    <param.grt.GenCodeOnly>false</param.grt.GenCodeOnly>
+    <param.version>R2011b</param.version>
+    <param.HasECoderFeatures>false</param.HasECoderFeatures>
+    <param.mex.mainhtml>C:\Users\sedm3697\Dropbox\DPhil\Matlab\Final_Matlab_Code\Signal Quality\Signal Quality Features\sampen\codegen\mex\sampenc\html\index.html</param.mex.mainhtml>
+    <param.grt.mainhtml />
+    <unset>
+      <param.mex.general.TargetLang />
+      <param.mex.general.IntegrityChecks />
+      <param.mex.general.ResponsivenessChecks />
+      <param.mex.general.EnableBLAS />
+      <param.mex.general.ExtrinsicCalls />
+      <param.mex.general.EchoExpressions />
+      <param.mex.general.EnableDebugging />
+      <param.mex.general.SaturateOnIntegerOverflow />
+      <param.mex.general.FilePartitionMethod />
+      <param.mex.general.GlobalDataSyncMethod />
+      <param.mex.general.EnableVariableSizing />
+      <param.mex.paths.working />
+      <param.mex.paths.working.specified />
+      <param.mex.paths.build />
+      <param.mex.paths.build.specified />
+      <param.mex.paths.search />
+      <param.mex.report.GenerateReport />
+      <param.mex.report.LaunchReport />
+      <param.mex.comments.GenerateComments />
+      <param.mex.comments.MATLABSourceComments />
+      <param.mex.symbols.ReservedNameArray />
+      <param.mex.customcode.CustomSourceCode />
+      <param.mex.customcode.CustomHeaderCode />
+      <param.mex.customcode.CustomInitializer />
+      <param.mex.customcode.CustomTerminator />
+      <param.mex.customcode.CustomInclude />
+      <param.mex.customcode.CustomSource />
+      <param.mex.customcode.CustomLibrary />
+      <param.mex.PostCodeGenCommand />
+      <param.mex.EnableMemcpy />
+      <param.mex.MemcpyThreshold />
+      <param.mex.InitFltsAndDblsToZero />
+      <param.mex.InlineThreshold />
+      <param.mex.InlineThresholdMax />
+      <param.mex.InlineStackLimit />
+      <param.mex.StackUsageMax />
+      <param.mex.ConstantFoldingTimeout />
+      <param.grt.general.TargetLang />
+      <param.grt.CCompilerOptimization />
+      <param.grt.CCompilerCustomOptimizations />
+      <param.grt.general.GenerateMakefile />
+      <param.grt.general.MakeCommand />
+      <param.grt.general.TemplateMakefile />
+      <param.grt.general.SaturateOnIntegerOverflow />
+      <param.grt.general.FilePartitionMethod />
+      <param.grt.general.EnableVariableSizing />
+      <param.grt.general.DynamicMemoryAllocation />
+      <param.grt.paths.working />
+      <param.grt.paths.working.specified />
+      <param.grt.paths.build />
+      <param.grt.paths.build.specified />
+      <param.grt.paths.search />
+      <param.grt.report.GenerateReport />
+      <param.grt.report.LaunchReport />
+      <param.grt.GenerateComments />
+      <param.grt.MATLABSourceComments />
+      <param.ert.MATLABFcnDesc />
+      <param.ert.CustomSymbolStrGlobalVar />
+      <param.ert.CustomSymbolStrType />
+      <param.ert.CustomSymbolStrField />
+      <param.ert.CustomSymbolStrFcn />
+      <param.ert.CustomSymbolStrTmpVar />
+      <param.ert.CustomSymbolStrMacro />
+      <param.ert.CustomSymbolStrEMXArray />
+      <param.grt.MaxIdLength />
+      <param.grt.ReservedNameArray />
+      <param.grt.customcode.CustomSourceCode />
+      <param.grt.customcode.CustomHeaderCode />
+      <param.grt.customcode.CustomInitializer />
+      <param.grt.customcode.CustomTerminator />
+      <param.grt.customcode.CustomInclude />
+      <param.grt.customcode.CustomSource />
+      <param.grt.customcode.CustomLibrary />
+      <param.grt.PostCodeGenCommand />
+      <param.grt.Verbose />
+      <param.grt.SupportNonFinite />
+      <param.ert.ParenthesesLevel />
+      <param.ert.ConvertIfToSwitch />
+      <param.ert.PreserveExternInFcnDecls />
+      <param.grt.EnableMemcpy />
+      <param.grt.MemcpyThreshold />
+      <param.grt.InitFltsAndDblsToZero />
+      <param.grt.InlineThreshold />
+      <param.grt.InlineThresholdMax />
+      <param.grt.InlineStackLimit />
+      <param.grt.StackUsageMax />
+      <param.grt.ConstantFoldingTimeout />
+      <param.UseECoderFeatures />
+      <param.mex.outputfile />
+      <param.grt.outputfile />
+      <param.artifact />
+      <param.mex.GenCodeOnly />
+      <param.grt.GenCodeOnly />
+      <param.version />
+      <param.HasECoderFeatures />
+      <param.grt.mainhtml />
+    </unset>
+    <fileset.entrypoints>
+      <file value="${PROJECT_ROOT}\sampenc.m" custom-data-expanded="true">
+        <Inputs fileName="sampenc.m" functionName="sampenc">
+          <Input Name="y">
+            <Class>double</Class>
+            <Size>:100000 x 1</Size>
+            <Value />
+            <InitialValue />
+            <Complex>false</Complex>
+          </Input>
+          <Input Name="M">
+            <Class>double</Class>
+            <Size>1 x 1</Size>
+            <Value />
+            <InitialValue />
+            <Complex>false</Complex>
+          </Input>
+          <Input Name="r">
+            <Class>double</Class>
+            <Size>1 x 1</Size>
+            <Value />
+            <InitialValue />
+            <Complex>false</Complex>
+          </Input>
+        </Inputs>
+      </file>
+    </fileset.entrypoints>
+    <fileset.package />
+    <build-deliverables />
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2011b</root>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.1</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
+

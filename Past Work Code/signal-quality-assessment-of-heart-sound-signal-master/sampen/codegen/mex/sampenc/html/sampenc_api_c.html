@@ -1,0 +1,156 @@
+<HTML>
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=utf-8" />
+<TITLE>RTW Report - sampenc_api.c </TITLE>
+</HEAD>
+<BODY BGCOLOR="#eeeeee" TEXT="#1122aa" ONLOAD="if (top) { if (top.rtwFileOnLoad) top.rtwFileOnLoad(window);}">
+<P>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="6" WIDTH="100%" HEIGHT="100%"><TR><TD WIDTH="100%" VALIGN="top" BGCOLOR="#ffffff">
+<H4>File: <A HREF="file:///C:\Users\sedm3697\Dropbox\DPhil\Matlab\Final_Matlab_Code\Signal Quality\Signal Quality Features\sampen\codegen\mex\sampenc\sampenc_api.c" TARGET="rtwreport_document_frame">C:\Users\sedm3697\Dropbox\DPhil\Matlab\Final_Matlab_Code\Signal Quality\Signal Quality Features\sampen\codegen\mex\sampenc\sampenc_api.c</A></H4>
+<PRE id="RTWcode">
+<A NAME="1"><FONT COLOR="#888888"><I>    1   </I></FONT></A><FONT COLOR="#117755"><I>/*</I></FONT>
+<A NAME="2"><FONT COLOR="#888888"><I>    2   </I></FONT></A><FONT COLOR="#117755"><I> * sampenc_api.c</I></FONT>
+<A NAME="3"><FONT COLOR="#888888"><I>    3   </I></FONT></A><FONT COLOR="#117755"><I> *</I></FONT>
+<A NAME="4"><FONT COLOR="#888888"><I>    4   </I></FONT></A><FONT COLOR="#117755"><I> * Code generation for function 'sampenc_api'</I></FONT>
+<A NAME="5"><FONT COLOR="#888888"><I>    5   </I></FONT></A><FONT COLOR="#117755"><I> *</I></FONT>
+<A NAME="6"><FONT COLOR="#888888"><I>    6   </I></FONT></A><FONT COLOR="#117755"><I> * C source code generated on: Tue Aug 18 16:14:49 2015</I></FONT>
+<A NAME="7"><FONT COLOR="#888888"><I>    7   </I></FONT></A><FONT COLOR="#117755"><I> *</I></FONT>
+<A NAME="8"><FONT COLOR="#888888"><I>    8   </I></FONT></A><FONT COLOR="#117755"><I> */</I></FONT>
+<A NAME="9"><FONT COLOR="#888888"><I>    9   </I></FONT></A>
+<A NAME="10"><FONT COLOR="#888888"><I>   10   </I></FONT></A><FONT COLOR="#117755"><I>/* Include files */</I></FONT>
+<A NAME="11"><FONT COLOR="#888888"><I>   11   </I></FONT></A><FONT COLOR="#992211">#</FONT><FONT COLOR="#992211"><B>include</B></FONT> <FONT COLOR="#992211">&quot;rt_nonfinite.h&quot;</FONT>
+<A NAME="12"><FONT COLOR="#888888"><I>   12   </I></FONT></A><FONT COLOR="#992211">#</FONT><FONT COLOR="#992211"><B>include</B></FONT> <FONT COLOR="#992211">&quot;sampenc.h&quot;</FONT>
+<A NAME="13"><FONT COLOR="#888888"><I>   13   </I></FONT></A><FONT COLOR="#992211">#</FONT><FONT COLOR="#992211"><B>include</B></FONT> <FONT COLOR="#992211">&quot;sampenc_api.h&quot;</FONT>
+<A NAME="14"><FONT COLOR="#888888"><I>   14   </I></FONT></A><FONT COLOR="#992211">#</FONT><FONT COLOR="#992211"><B>include</B></FONT> <FONT COLOR="#992211">&quot;sampenc_emxutil.h&quot;</FONT>
+<A NAME="15"><FONT COLOR="#888888"><I>   15   </I></FONT></A>
+<A NAME="16"><FONT COLOR="#888888"><I>   16   </I></FONT></A><FONT COLOR="#117755"><I>/* Type Definitions */</I></FONT>
+<A NAME="17"><FONT COLOR="#888888"><I>   17   </I></FONT></A>
+<A NAME="18"><FONT COLOR="#888888"><I>   18   </I></FONT></A><FONT COLOR="#117755"><I>/* Named Constants */</I></FONT>
+<A NAME="19"><FONT COLOR="#888888"><I>   19   </I></FONT></A>
+<A NAME="20"><FONT COLOR="#888888"><I>   20   </I></FONT></A><FONT COLOR="#117755"><I>/* Variable Declarations */</I></FONT>
+<A NAME="21"><FONT COLOR="#888888"><I>   21   </I></FONT></A>
+<A NAME="22"><FONT COLOR="#888888"><I>   22   </I></FONT></A><FONT COLOR="#117755"><I>/* Variable Definitions */</I></FONT>
+<A NAME="23"><FONT COLOR="#888888"><I>   23   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> emlrtRTEInfo <A NAME="var_e_emlrtRTEI">e_emlrtRTEI</A> = <B>{</B> 1, 1, <FONT COLOR="#1122ff">&quot;sampenc_api&quot;</FONT>, <FONT COLOR="#1122ff">&quot;&quot;</FONT> <B>}</B>;
+<A NAME="24"><FONT COLOR="#888888"><I>   24   </I></FONT></A>
+<A NAME="25"><FONT COLOR="#888888"><I>   25   </I></FONT></A><FONT COLOR="#117755"><I>/* Function Declarations */</I></FONT>
+<A NAME="26"><FONT COLOR="#888888"><I>   26   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> <FONT COLOR="#112266"><B>void</B></FONT> <A HREF="sampenc_api_c.html#fcn_b_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_b_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">b_emlrt_marshallIn</FONT></A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *u, <FONT COLOR="#112266"><B>const</B></FONT> emlrtMsgIdentifier *parentId, <A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *y);
+<A NAME="27"><FONT COLOR="#888888"><I>   27   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> real_T <A HREF="sampenc_api_c.html#fcn_c_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_c_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">c_emlrt_marshallIn</FONT></A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *M, <FONT COLOR="#112266"><B>const</B></FONT> char_T *identifier);
+<A NAME="28"><FONT COLOR="#888888"><I>   28   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> real_T <A HREF="sampenc_api_c.html#fcn_d_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_d_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">d_emlrt_marshallIn</FONT></A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *u, <FONT COLOR="#112266"><B>const</B></FONT> emlrtMsgIdentifier *parentId);
+<A NAME="29"><FONT COLOR="#888888"><I>   29   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> <FONT COLOR="#112266"><B>void</B></FONT> <A HREF="sampenc_api_c.html#fcn_e_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_e_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">e_emlrt_marshallIn</FONT></A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *src, <FONT COLOR="#112266"><B>const</B></FONT> emlrtMsgIdentifier *msgId, <A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *ret);
+<A NAME="30"><FONT COLOR="#888888"><I>   30   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> <FONT COLOR="#112266"><B>void</B></FONT> <A HREF="sampenc_api_c.html#fcn_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emlrt_marshallIn</FONT></A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *y, <FONT COLOR="#112266"><B>const</B></FONT> char_T *identifier, <A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *b_y);
+<A NAME="31"><FONT COLOR="#888888"><I>   31   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> <FONT COLOR="#112266"><B>const</B></FONT> mxArray *<A HREF="sampenc_api_c.html#fcn_emlrt_marshallOut" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emlrt_marshallOut');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emlrt_marshallOut</FONT></A>(<A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *u);
+<A NAME="32"><FONT COLOR="#888888"><I>   32   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> real_T <A HREF="sampenc_api_c.html#fcn_f_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_f_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">f_emlrt_marshallIn</FONT></A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *src, <FONT COLOR="#112266"><B>const</B></FONT> emlrtMsgIdentifier *msgId);
+<A NAME="33"><FONT COLOR="#888888"><I>   33   </I></FONT></A>
+<A NAME="34"><FONT COLOR="#888888"><I>   34   </I></FONT></A><FONT COLOR="#117755"><I>/* Function Definitions */</I></FONT>
+<A NAME="35"><FONT COLOR="#888888"><I>   35   </I></FONT></A>
+<A NAME="36"><FONT COLOR="#888888"><I>   36   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> <FONT COLOR="#112266"><B>void</B></FONT> <A NAME="fcn_b_emlrt_marshallIn">b_emlrt_marshallIn</A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *u, <FONT COLOR="#112266"><B>const</B></FONT> emlrtMsgIdentifier *parentId, <A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *y)
+<A NAME="37"><FONT COLOR="#888888"><I>   37   </I></FONT></A><B>{</B>
+<A NAME="38"><FONT COLOR="#888888"><I>   38   </I></FONT></A>    <A HREF="sampenc_api_c.html#fcn_e_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_e_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">e_emlrt_marshallIn</FONT></A>(emlrtAlias(u), parentId, y);
+<A NAME="39"><FONT COLOR="#888888"><I>   39   </I></FONT></A>    emlrtDestroyArray(&amp;u);
+<A NAME="40"><FONT COLOR="#888888"><I>   40   </I></FONT></A><B>}</B>
+<A NAME="41"><FONT COLOR="#888888"><I>   41   </I></FONT></A>
+<A NAME="42"><FONT COLOR="#888888"><I>   42   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> real_T <A NAME="fcn_c_emlrt_marshallIn">c_emlrt_marshallIn</A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *M, <FONT COLOR="#112266"><B>const</B></FONT> char_T *identifier)
+<A NAME="43"><FONT COLOR="#888888"><I>   43   </I></FONT></A><B>{</B>
+<A NAME="44"><FONT COLOR="#888888"><I>   44   </I></FONT></A>    real_T y;
+<A NAME="45"><FONT COLOR="#888888"><I>   45   </I></FONT></A>    emlrtMsgIdentifier thisId;
+<A NAME="46"><FONT COLOR="#888888"><I>   46   </I></FONT></A>    thisId.fIdentifier = identifier;
+<A NAME="47"><FONT COLOR="#888888"><I>   47   </I></FONT></A>    thisId.fParent = NULL;
+<A NAME="48"><FONT COLOR="#888888"><I>   48   </I></FONT></A>    y = <A HREF="sampenc_api_c.html#fcn_d_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_d_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">d_emlrt_marshallIn</FONT></A>(emlrtAlias(M), &amp;thisId);
+<A NAME="49"><FONT COLOR="#888888"><I>   49   </I></FONT></A>    emlrtDestroyArray(&amp;M);
+<A NAME="50"><FONT COLOR="#888888"><I>   50   </I></FONT></A>    <FONT COLOR="#112266"><B>return</B></FONT> y;
+<A NAME="51"><FONT COLOR="#888888"><I>   51   </I></FONT></A><B>}</B>
+<A NAME="52"><FONT COLOR="#888888"><I>   52   </I></FONT></A>
+<A NAME="53"><FONT COLOR="#888888"><I>   53   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> real_T <A NAME="fcn_d_emlrt_marshallIn">d_emlrt_marshallIn</A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *u, <FONT COLOR="#112266"><B>const</B></FONT> emlrtMsgIdentifier *parentId)
+<A NAME="54"><FONT COLOR="#888888"><I>   54   </I></FONT></A><B>{</B>
+<A NAME="55"><FONT COLOR="#888888"><I>   55   </I></FONT></A>    real_T y;
+<A NAME="56"><FONT COLOR="#888888"><I>   56   </I></FONT></A>    y = <A HREF="sampenc_api_c.html#fcn_f_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_f_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">f_emlrt_marshallIn</FONT></A>(emlrtAlias(u), parentId);
+<A NAME="57"><FONT COLOR="#888888"><I>   57   </I></FONT></A>    emlrtDestroyArray(&amp;u);
+<A NAME="58"><FONT COLOR="#888888"><I>   58   </I></FONT></A>    <FONT COLOR="#112266"><B>return</B></FONT> y;
+<A NAME="59"><FONT COLOR="#888888"><I>   59   </I></FONT></A><B>}</B>
+<A NAME="60"><FONT COLOR="#888888"><I>   60   </I></FONT></A>
+<A NAME="61"><FONT COLOR="#888888"><I>   61   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> <FONT COLOR="#112266"><B>void</B></FONT> <A NAME="fcn_e_emlrt_marshallIn">e_emlrt_marshallIn</A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *src, <FONT COLOR="#112266"><B>const</B></FONT> emlrtMsgIdentifier *msgId, <A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *ret)
+<A NAME="62"><FONT COLOR="#888888"><I>   62   </I></FONT></A><B>{</B>
+<A NAME="63"><FONT COLOR="#888888"><I>   63   </I></FONT></A>    int32_T iv1[1];
+<A NAME="64"><FONT COLOR="#888888"><I>   64   </I></FONT></A>    boolean_T bv0[1];
+<A NAME="65"><FONT COLOR="#888888"><I>   65   </I></FONT></A>    int32_T i1;
+<A NAME="66"><FONT COLOR="#888888"><I>   66   </I></FONT></A>    iv1[0] = 100000;
+<A NAME="67"><FONT COLOR="#888888"><I>   67   </I></FONT></A>    bv0[0] = TRUE;
+<A NAME="68"><FONT COLOR="#888888"><I>   68   </I></FONT></A>    emlrtCheckVsBuiltInCtxR2011b(&amp;<A HREF="sampenc_mex_c.html#var_emlrtContextGlobal" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emlrtContextGlobal');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emlrtContextGlobal</FONT></A>, msgId, src, <FONT COLOR="#1122ff">&quot;double&quot;</FONT>, FALSE, 1U, iv1, bv0, ret-&gt;size);
+<A NAME="69"><FONT COLOR="#888888"><I>   69   </I></FONT></A>    i1 = ret-&gt;size[0];
+<A NAME="70"><FONT COLOR="#888888"><I>   70   </I></FONT></A>    <A HREF="sampenc_emxutil_c.html#fcn_emxEnsureCapacity" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxEnsureCapacity');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxEnsureCapacity</FONT></A>((<A HREF="sampenc_types_h.html#type_emxArray__common" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray__common');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray__common</FONT></A> *)ret, i1, (int32_T)<FONT COLOR="#112266"><B>sizeof</B></FONT>(real_T), (emlrtRTEInfo *)NULL);
+<A NAME="71"><FONT COLOR="#888888"><I>   71   </I></FONT></A>    emlrtImportArrayR2011b(src, ret-&gt;data, 8, FALSE);
+<A NAME="72"><FONT COLOR="#888888"><I>   72   </I></FONT></A>    emlrtDestroyArray(&amp;src);
+<A NAME="73"><FONT COLOR="#888888"><I>   73   </I></FONT></A><B>}</B>
+<A NAME="74"><FONT COLOR="#888888"><I>   74   </I></FONT></A>
+<A NAME="75"><FONT COLOR="#888888"><I>   75   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> <FONT COLOR="#112266"><B>void</B></FONT> <A NAME="fcn_emlrt_marshallIn">emlrt_marshallIn</A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *y, <FONT COLOR="#112266"><B>const</B></FONT> char_T *identifier, <A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *b_y)
+<A NAME="76"><FONT COLOR="#888888"><I>   76   </I></FONT></A><B>{</B>
+<A NAME="77"><FONT COLOR="#888888"><I>   77   </I></FONT></A>    emlrtMsgIdentifier thisId;
+<A NAME="78"><FONT COLOR="#888888"><I>   78   </I></FONT></A>    thisId.fIdentifier = identifier;
+<A NAME="79"><FONT COLOR="#888888"><I>   79   </I></FONT></A>    thisId.fParent = NULL;
+<A NAME="80"><FONT COLOR="#888888"><I>   80   </I></FONT></A>    <A HREF="sampenc_api_c.html#fcn_b_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_b_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">b_emlrt_marshallIn</FONT></A>(emlrtAlias(y), &amp;thisId, b_y);
+<A NAME="81"><FONT COLOR="#888888"><I>   81   </I></FONT></A>    emlrtDestroyArray(&amp;y);
+<A NAME="82"><FONT COLOR="#888888"><I>   82   </I></FONT></A><B>}</B>
+<A NAME="83"><FONT COLOR="#888888"><I>   83   </I></FONT></A>
+<A NAME="84"><FONT COLOR="#888888"><I>   84   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> <FONT COLOR="#112266"><B>const</B></FONT> mxArray *<A NAME="fcn_emlrt_marshallOut">emlrt_marshallOut</A>(<A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *u)
+<A NAME="85"><FONT COLOR="#888888"><I>   85   </I></FONT></A><B>{</B>
+<A NAME="86"><FONT COLOR="#888888"><I>   86   </I></FONT></A>    <FONT COLOR="#112266"><B>const</B></FONT> mxArray *y;
+<A NAME="87"><FONT COLOR="#888888"><I>   87   </I></FONT></A>    <FONT COLOR="#112266"><B>const</B></FONT> mxArray *m1;
+<A NAME="88"><FONT COLOR="#888888"><I>   88   </I></FONT></A>    real_T (*pData)[];
+<A NAME="89"><FONT COLOR="#888888"><I>   89   </I></FONT></A>    int32_T i0;
+<A NAME="90"><FONT COLOR="#888888"><I>   90   </I></FONT></A>    int32_T i;
+<A NAME="91"><FONT COLOR="#888888"><I>   91   </I></FONT></A>    y = NULL;
+<A NAME="92"><FONT COLOR="#888888"><I>   92   </I></FONT></A>    m1 = mxCreateNumericArray(1, u-&gt;size, mxDOUBLE_CLASS, mxREAL);
+<A NAME="93"><FONT COLOR="#888888"><I>   93   </I></FONT></A>    pData = (real_T (*)[])mxGetPr(m1);
+<A NAME="94"><FONT COLOR="#888888"><I>   94   </I></FONT></A>    i0 = 0;
+<A NAME="95"><FONT COLOR="#888888"><I>   95   </I></FONT></A>    <FONT COLOR="#112266"><B>for</B></FONT> (i = 0; i &lt; u-&gt;size[0]; i++) <B>{</B>
+<A NAME="96"><FONT COLOR="#888888"><I>   96   </I></FONT></A>        (*pData)[i0] = u-&gt;data[i];
+<A NAME="97"><FONT COLOR="#888888"><I>   97   </I></FONT></A>        i0++;
+<A NAME="98"><FONT COLOR="#888888"><I>   98   </I></FONT></A>    <B>}</B>
+<A NAME="99"><FONT COLOR="#888888"><I>   99   </I></FONT></A>    emlrtAssign(&amp;y, m1);
+<A NAME="100"><FONT COLOR="#888888"><I>  100   </I></FONT></A>    <FONT COLOR="#112266"><B>return</B></FONT> y;
+<A NAME="101"><FONT COLOR="#888888"><I>  101   </I></FONT></A><B>}</B>
+<A NAME="102"><FONT COLOR="#888888"><I>  102   </I></FONT></A>
+<A NAME="103"><FONT COLOR="#888888"><I>  103   </I></FONT></A><FONT COLOR="#112266"><B>static</B></FONT> real_T <A NAME="fcn_f_emlrt_marshallIn">f_emlrt_marshallIn</A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray *src, <FONT COLOR="#112266"><B>const</B></FONT> emlrtMsgIdentifier *msgId)
+<A NAME="104"><FONT COLOR="#888888"><I>  104   </I></FONT></A><B>{</B>
+<A NAME="105"><FONT COLOR="#888888"><I>  105   </I></FONT></A>    real_T ret;
+<A NAME="106"><FONT COLOR="#888888"><I>  106   </I></FONT></A>    emlrtCheckBuiltInCtxR2011b(&amp;<A HREF="sampenc_mex_c.html#var_emlrtContextGlobal" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emlrtContextGlobal');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emlrtContextGlobal</FONT></A>, msgId, src, <FONT COLOR="#1122ff">&quot;double&quot;</FONT>, FALSE, 0U, 0);
+<A NAME="107"><FONT COLOR="#888888"><I>  107   </I></FONT></A>    ret = *(real_T *)mxGetData(src);
+<A NAME="108"><FONT COLOR="#888888"><I>  108   </I></FONT></A>    emlrtDestroyArray(&amp;src);
+<A NAME="109"><FONT COLOR="#888888"><I>  109   </I></FONT></A>    <FONT COLOR="#112266"><B>return</B></FONT> ret;
+<A NAME="110"><FONT COLOR="#888888"><I>  110   </I></FONT></A><B>}</B>
+<A NAME="111"><FONT COLOR="#888888"><I>  111   </I></FONT></A>
+<A NAME="112"><FONT COLOR="#888888"><I>  112   </I></FONT></A><FONT COLOR="#112266"><B>void</B></FONT> <A NAME="fcn_sampenc_api">sampenc_api</A>(<FONT COLOR="#112266"><B>const</B></FONT> mxArray * <FONT COLOR="#112266"><B>const</B></FONT> prhs[3], <FONT COLOR="#112266"><B>const</B></FONT> mxArray *plhs[3])
+<A NAME="113"><FONT COLOR="#888888"><I>  113   </I></FONT></A><B>{</B>
+<A NAME="114"><FONT COLOR="#888888"><I>  114   </I></FONT></A>    <A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *y;
+<A NAME="115"><FONT COLOR="#888888"><I>  115   </I></FONT></A>    <A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *e;
+<A NAME="116"><FONT COLOR="#888888"><I>  116   </I></FONT></A>    <A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *A;
+<A NAME="117"><FONT COLOR="#888888"><I>  117   </I></FONT></A>    <A HREF="sampenc_types_h.html#type_emxArray_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxArray_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxArray_real_T</FONT></A> *B;
+<A NAME="118"><FONT COLOR="#888888"><I>  118   </I></FONT></A>    real_T M;
+<A NAME="119"><FONT COLOR="#888888"><I>  119   </I></FONT></A>    real_T r;
+<A NAME="120"><FONT COLOR="#888888"><I>  120   </I></FONT></A>    emlrtHeapReferenceStackEnterFcn();
+<A NAME="121"><FONT COLOR="#888888"><I>  121   </I></FONT></A>    <A HREF="sampenc_emxutil_c.html#fcn_b_emxInit_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_b_emxInit_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">b_emxInit_real_T</FONT></A>(&amp;y, 1, &amp;<A HREF="sampenc_api_c.html#var_e_emlrtRTEI" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_e_emlrtRTEI');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">e_emlrtRTEI</FONT></A>, TRUE);
+<A NAME="122"><FONT COLOR="#888888"><I>  122   </I></FONT></A>    <A HREF="sampenc_emxutil_c.html#fcn_b_emxInit_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_b_emxInit_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">b_emxInit_real_T</FONT></A>(&amp;e, 1, &amp;<A HREF="sampenc_api_c.html#var_e_emlrtRTEI" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_e_emlrtRTEI');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">e_emlrtRTEI</FONT></A>, TRUE);
+<A NAME="123"><FONT COLOR="#888888"><I>  123   </I></FONT></A>    <A HREF="sampenc_emxutil_c.html#fcn_b_emxInit_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_b_emxInit_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">b_emxInit_real_T</FONT></A>(&amp;A, 1, &amp;<A HREF="sampenc_api_c.html#var_e_emlrtRTEI" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_e_emlrtRTEI');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">e_emlrtRTEI</FONT></A>, TRUE);
+<A NAME="124"><FONT COLOR="#888888"><I>  124   </I></FONT></A>    <A HREF="sampenc_emxutil_c.html#fcn_b_emxInit_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_b_emxInit_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">b_emxInit_real_T</FONT></A>(&amp;B, 1, &amp;<A HREF="sampenc_api_c.html#var_e_emlrtRTEI" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_e_emlrtRTEI');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">e_emlrtRTEI</FONT></A>, TRUE);
+<A NAME="125"><FONT COLOR="#888888"><I>  125   </I></FONT></A>    <FONT COLOR="#117755"><I>/* Marshall function inputs */</I></FONT>
+<A NAME="126"><FONT COLOR="#888888"><I>  126   </I></FONT></A>    <A HREF="sampenc_api_c.html#fcn_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emlrt_marshallIn</FONT></A>(emlrtAliasP(prhs[0]), <FONT COLOR="#1122ff">&quot;y&quot;</FONT>, y);
+<A NAME="127"><FONT COLOR="#888888"><I>  127   </I></FONT></A>    M = <A HREF="sampenc_api_c.html#fcn_c_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_c_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">c_emlrt_marshallIn</FONT></A>(emlrtAliasP(prhs[1]), <FONT COLOR="#1122ff">&quot;M&quot;</FONT>);
+<A NAME="128"><FONT COLOR="#888888"><I>  128   </I></FONT></A>    r = <A HREF="sampenc_api_c.html#fcn_c_emlrt_marshallIn" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_c_emlrt_marshallIn');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">c_emlrt_marshallIn</FONT></A>(emlrtAliasP(prhs[2]), <FONT COLOR="#1122ff">&quot;r&quot;</FONT>);
+<A NAME="129"><FONT COLOR="#888888"><I>  129   </I></FONT></A>    <FONT COLOR="#117755"><I>/* Invoke the target function */</I></FONT>
+<A NAME="130"><FONT COLOR="#888888"><I>  130   </I></FONT></A>    <A HREF="sampenc_c.html#fcn_sampenc" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_sampenc');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">sampenc</FONT></A>(y, M, r, e, A, B);
+<A NAME="131"><FONT COLOR="#888888"><I>  131   </I></FONT></A>    <FONT COLOR="#117755"><I>/* Marshall function outputs */</I></FONT>
+<A NAME="132"><FONT COLOR="#888888"><I>  132   </I></FONT></A>    plhs[0] = <A HREF="sampenc_api_c.html#fcn_emlrt_marshallOut" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emlrt_marshallOut');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emlrt_marshallOut</FONT></A>(e);
+<A NAME="133"><FONT COLOR="#888888"><I>  133   </I></FONT></A>    plhs[1] = <A HREF="sampenc_api_c.html#fcn_emlrt_marshallOut" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emlrt_marshallOut');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emlrt_marshallOut</FONT></A>(A);
+<A NAME="134"><FONT COLOR="#888888"><I>  134   </I></FONT></A>    plhs[2] = <A HREF="sampenc_api_c.html#fcn_emlrt_marshallOut" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emlrt_marshallOut');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emlrt_marshallOut</FONT></A>(B);
+<A NAME="135"><FONT COLOR="#888888"><I>  135   </I></FONT></A>    <A HREF="sampenc_emxutil_c.html#fcn_emxFree_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxFree_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxFree_real_T</FONT></A>(&amp;B);
+<A NAME="136"><FONT COLOR="#888888"><I>  136   </I></FONT></A>    <A HREF="sampenc_emxutil_c.html#fcn_emxFree_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxFree_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxFree_real_T</FONT></A>(&amp;A);
+<A NAME="137"><FONT COLOR="#888888"><I>  137   </I></FONT></A>    <A HREF="sampenc_emxutil_c.html#fcn_emxFree_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxFree_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxFree_real_T</FONT></A>(&amp;e);
+<A NAME="138"><FONT COLOR="#888888"><I>  138   </I></FONT></A>    <A HREF="sampenc_emxutil_c.html#fcn_emxFree_real_T" ONCLICK="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'var_emxFree_real_T');" TARGET="rtwreport_document_frame"><FONT COLOR="#1122aa">emxFree_real_T</FONT></A>(&amp;y);
+<A NAME="139"><FONT COLOR="#888888"><I>  139   </I></FONT></A>    emlrtHeapReferenceStackLeaveFcn();
+<A NAME="140"><FONT COLOR="#888888"><I>  140   </I></FONT></A><B>}</B>
+<A NAME="141"><FONT COLOR="#888888"><I>  141   </I></FONT></A><FONT COLOR="#117755"><I>/* End of code generation (sampenc_api.c) */</I></FONT>
+<A NAME="142"><FONT COLOR="#888888"><I>  142   </I></FONT></A></PRE>
+</TD></TR></TABLE>
+</P>
+</BODY>
+</HTML>
