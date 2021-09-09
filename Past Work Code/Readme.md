@@ -4,8 +4,11 @@ The folders here are from past research on heart and lung sound quality estimati
 References are provided below: 
 - General Physionet Solution
 -- Paper: G. Clifford et al., "Classification of normal/abnormal heart sound recordings: The PhysioNet/Computing in Cardiology Challenge 2016", 2016 Computing in Cardiology Conference (CinC), 2016
+<br />
 -- Link to Paper
+<br />
 -- Link to Code: https://physionet.org/content/challenge-2016/1.0.0/
+<br />
 
 - igagrze-213
 -- Paper: I. Grzegorczyk et al., "PCG classification using a neural network approach", 2016 Computing in Cardiology Conference (CinC), 2016
