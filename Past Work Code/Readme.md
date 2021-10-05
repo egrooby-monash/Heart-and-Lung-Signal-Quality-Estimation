@@ -15,7 +15,7 @@ References are provided below:
   - Paper: E. Grooby et al., "Neonatal heart and lung sound quality assessment for robust heart and breathing rate estimation for telehealth applications", IEEE Journal of Biomedical and Health Informatics, 2020
   - Link to Paper: https://ieeexplore.ieee.org/abstract/document/9309367
   - Link to Code: https://github.com/JulieKy/Internship-2A
-  - morteza.zabihi-208
+- morteza.zabihi-208
   - Paper: M. Zahibi et al., "Heart sound anomaly and quality detection using ensemble of neural networks without segmentation", 2016 Computing in Cardiology Conference (CinC), 2016
   - Link to Paper: https://ieeexplore.ieee.org/document/7868817
   - Link to Code: https://physionet.org/content/challenge-2016/1.0.0/
